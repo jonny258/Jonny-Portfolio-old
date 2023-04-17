@@ -1,0 +1,263 @@
+/* root */
+:root {
+    --main-font: 'Roboto', sans-serif;
+}
+
+
+/* home */
+.home {
+    background-color: gray;
+}
+
+.center-div button, .home button {
+    background-color: black;
+}
+
+.home a {
+    text-decoration: none;
+    color: white;
+}
+
+/* nav */
+.nav {
+    background-color: black;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+}
+
+/* about-me */
+.about-me {
+    background-color: white;
+}
+
+.about-me h1 {
+    padding: 100px;
+}
+
+.skills-icons {
+    margin: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.icon-image {
+    height: 60px;
+}
+
+.about-me-bottom {
+    display: flex;
+}
+
+.profile {
+    width: 50%;
+}
+
+.profile p {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.picture-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.picture-container img {
+    width: 200px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.picture-container img:hover {
+    transform: scale(1.2);
+}
+
+.techstack {
+    width: 50%
+}
+
+.tech-icons {
+    padding: 20px;
+    border-radius: 5px;
+    background-color: gray;
+    min-width: 350px;
+}
+
+/* portfolio */
+.portfolio {
+    background-color: darkgray;
+}
+
+.portfolio h1 {
+    padding-top: 50px;
+    margin-top: 50px;
+}
+
+.project {
+    margin-top: 125px;
+    background-color: lightgrey;
+}
+
+.project-text {
+    padding: 5px;
+    max-width: 600px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.project-text h3 {
+    margin-top: 10px;
+    font-size: 150%;
+}
+
+.project-text a {
+    color: black;
+    text-decoration: none;
+}
+
+.project-text a:hover {
+    text-decoration: underline;
+}
+
+.project img {
+    max-width: 600px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+.display-box {
+    width: 1200px;
+    background-color: black;
+    overflow-x: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Appering text */
+.image-container {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.image-container img {
+    width: 200px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: opacity 0.3s;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+.overlay h2 {
+    color: #fff;
+    font-size: 20px;
+    padding: 3px;
+}
+
+.overlay p {
+    color: #fff;
+    line-height: 110%;
+}
+
+
+/* contact-me */
+.contact-me {
+    padding: 100px;
+    background-color: lightgray;
+}
+
+.contact-box {
+    display: flex;
+    height: 400px;
+    width: 1200px;
+    background-color: gray;
+}
+
+.socials-container {
+    height: 275px;
+    background-color: lightgray;
+}
+
+.socials-container div {
+    list-style: none;
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: gray 3px solid;
+
+}
+
+.socials-clickable {
+    text-decoration: none;
+    color: black;
+}
+
+.socials-clickable:hover {
+    text-decoration: underline;
+}
+
+.title-socials {
+    font-size: 12px;
+    margin: 0px;
+    text-align: start;
+}
+
+
+.contact-form {
+    padding: 20px;
+    box-sizing: border-box;
+    width: 40%;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+}
+
+.contact-form textarea {
+    height: 200px;
+}
+
+
+@media screen and (max-width: 800px) {
+    .about-me-bottom {
+        display: block;
+    }
+
+    .techstack,
+    .profile {
+        width: 100%
+    }
+
+    .skills-icons {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .contact-box{
+        display: block;
+    }
+
+    .contact-form {
+        width: 100%;
+        border-left: none;
+        border-right: none;
+    }
+}
