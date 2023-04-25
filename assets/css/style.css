@@ -1,46 +1,71 @@
 /* root */
 :root {
     --main-font: 'Roboto', sans-serif;
+    --primary-color: white;
+    --secondary-color: black;
+    --accent-color1: #86377b;
+    --accent-color2: #27273c;
+    --gray-coloring: rgb(99, 99, 99);
+    --light-gray: rgb(161, 152, 161);
 }
 
 
 /* home */
 .home {
-    background-color: gray;
+    font-family: var(--main-font);
+}
+
+.intro{
+    z-index: 100;
 }
 
 .center-div button, .home button {
-    background-color: black;
+    background-color: var(--secondary-color);
 }
 
 .home a {
     text-decoration: none;
-    color: white;
+    color: var(--primary-color);
 }
 
 /* nav */
 .nav {
-    background-color: black;
+    margin-top: 30px;
+    padding: 5px;
+    background-color: var(--secondary-color);
 }
 
 .nav a {
+    font-family: var(--main-font);
     text-decoration: none;
-    color: white;
+    color: var(--primary-color);
 }
 
 /* about-me */
 .about-me {
-    background-color: white;
+    background-color: var(--accent-color2);
+    color: var(--primary-color)
 }
 
 .about-me h1 {
     padding: 100px;
+    font-family: var(--main-font);
+    font-size: 70px;
 }
 
 .skills-icons {
-    margin: 50px;
     margin-left: 200px;
     margin-right: 200px;
+    margin-bottom: 50px;
+}
+
+.full-icon{
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    color: var(--secondary-color);
+    margin: 20px;
+    width:300px; 
+    padding: 10px;   
 }
 
 .icon-image {
@@ -57,7 +82,9 @@
 
 .profile p {
     margin-left: 100px;
-    margin-right: 100px;
+    margin-right: 100px;  
+    padding: 5px; 
+    border-bottom: white 3px solid;
 }
 
 .picture-container {
@@ -75,29 +102,38 @@
 }
 
 .techstack {
+    margin-top: 50px;
     width: 50%
 }
 
+.techstack h2{
+    font-size: 50px;
+}
+
 .tech-icons {
+    margin-left: 100px;
+    margin-right: 100px;
     padding: 20px;
     border-radius: 5px;
-    background-color: gray;
+    background-color: var(--gray-coloring);
     min-width: 350px;
 }
 
 /* portfolio */
 .portfolio {
-    background-color: darkgray;
+    background-image: linear-gradient(to top, var(--primary-color),var(--accent-color1), var(--accent-color2));
 }
 
 .portfolio h1 {
-    padding-top: 50px;
-    margin-top: 50px;
+    padding-top: 100px;
+    font-family: var(--main-font);
+    font-size: 70px;
+    color: var(--primary-color)
 }
 
 .project {
     margin-top: 125px;
-    background-color: lightgrey;
+    background-color: var(--light-gray);
 }
 
 .project-text {
@@ -113,7 +149,7 @@
 }
 
 .project-text a {
-    color: black;
+    color: var(--secondary-color);
     text-decoration: none;
 }
 
@@ -127,13 +163,18 @@
     border-bottom-right-radius: 5px;
 }
 
+#Other-projects{
+    color: var(--secondary-color)
+}
+
 
 .display-box {
     width: 1200px;
-    background-color: black;
+    background-color: var(--secondary-color);
     overflow-x: auto;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 150px;
 }
 
 /* Appering text */
@@ -169,13 +210,13 @@
 }
 
 .overlay h2 {
-    color: #fff;
+    color: var(--primary-color);
     font-size: 20px;
     padding: 3px;
 }
 
 .overlay p {
-    color: #fff;
+    color: var(--primary-color);
     line-height: 110%;
 }
 
@@ -183,14 +224,16 @@
 /* contact-me */
 .contact-me {
     padding: 100px;
-    background-color: lightgray;
+    background-color: var(--accent-color2);
 }
 
 .contact-box {
+    font-family: var(--main-font);
     display: flex;
     height: 400px;
     width: 1200px;
-    background-color: gray;
+    border-radius: 5px;
+    background-color: var(--gray-coloring);
 }
 
 .socials-container {
@@ -209,7 +252,7 @@
 
 .socials-clickable {
     text-decoration: none;
-    color: black;
+    color: var(--secondary-color);
 }
 
 .socials-clickable:hover {
@@ -227,8 +270,8 @@
     padding: 20px;
     box-sizing: border-box;
     width: 40%;
-    border-left: 3px solid black;
-    border-right: 3px solid black;
+    border-left: 3px solid var(--secondary-color);
+    border-right: 3px solid var(--secondary-color);
 }
 
 .contact-form textarea {
