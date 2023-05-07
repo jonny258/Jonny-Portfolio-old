@@ -54,9 +54,10 @@
 }
 
 .skills-icons {
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 150px;
+    margin-right: 150px;
     margin-bottom: 50px;
+
 }
 
 .full-icon{
@@ -64,8 +65,10 @@
     border-radius: 10px;
     color: var(--secondary-color);
     margin: 20px;
-    width:300px; 
-    padding: 10px;   
+    max-width: 300px;
+    padding: 10px;
+    flex-basis: 100px;
+    flex-grow: 1;
 }
 
 .icon-image {
@@ -93,6 +96,7 @@
 }
 
 .picture-container img {
+    border-radius: 5px;
     width: 200px;
     transition: transform 0.3s ease-in-out;
 }
@@ -103,7 +107,11 @@
 
 .techstack {
     margin-top: 50px;
-    width: 50%
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+    
 }
 
 .techstack h2{
@@ -143,6 +151,23 @@
     border-bottom-left-radius: 5px;
 }
 
+.project-tech-chal div{
+    width: 50%;
+}
+
+.project-tech{
+    border-right: 2px solid black;
+    padding-right: 10px;
+}
+
+.project-chal{
+    padding-left: 10px;
+}
+
+.project-sum{
+    border-top: 2px solid black; margin: 5px;
+}
+
 .project-text h3 {
     margin-top: 10px;
     font-size: 150%;
@@ -155,6 +180,11 @@
 
 .project-text a:hover {
     text-decoration: underline;
+}
+
+.project-titles{
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .project img {
@@ -182,8 +212,8 @@
     position: relative;
     display: inline-block;
     width: 200px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 .image-container img {
@@ -285,8 +315,11 @@
     }
 
     .techstack,
-    .profile {
-        width: 100%
+    .profile,
+    .tech-icons {
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 
     .skills-icons {
@@ -296,11 +329,62 @@
 
     .contact-box{
         display: block;
+        height: fit-content;
     }
 
     .contact-form {
         width: 100%;
         border-left: none;
         border-right: none;
+    }
+
+    .project img{
+        width: 100%;
+    }
+
+    .display-box{
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .project-text div{
+        display: block;
+        width: 100%;
+    }
+    .project-titles {
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+        margin: 0px;
+        
+    }
+
+    .project-titles h3, .project-titles a{
+        width: 100%;
+    }
+
+    .project-tech-chal {
+        flex-wrap: wrap;
+        flex-direction: row;
+        border: none;
+    }
+    .project-tech, .project-chal, .project-sum {
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        padding-top: 10px;
+        border: none;
+        text-align: center;
+        border-bottom: 2px solid black;
+    }
+    .contact-box{
+        margin: 0px;
+    }
+    .socials{
+        width: 100%;
+        margin: 0px;
     }
 }
