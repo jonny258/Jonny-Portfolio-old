@@ -9,6 +9,39 @@
     --light-gray: rgb(161, 152, 161);
 }
 
+.new-port{
+    z-index: 2000;
+    width: 100vw;
+    background-color: white;
+}
+
+.new-port {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 20vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Highest z-index value */
+}
+
+.new-port h1 {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    padding: 20px;
+}
+
+.new-port a {
+    color:blue;
+    font-size: 24px;
+    text-align: center;
+    padding: 20px;
+}
+
 
 /* home */
 .home {
