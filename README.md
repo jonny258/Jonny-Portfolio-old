@@ -1,3 +1,5 @@
+# This is my old portfolio new one linked below
+# https://jonnyolsen.xyz/
 # Portfolio Project
 This portfolio project showcases all my large projects, includes an about me section and a contact me section. It's designed to provide an overview of my work and experience, as well as a way for potential employers or clients to get in touch with me.
 
@@ -15,7 +17,5 @@ If you're interested in working with me or just want to say hello, feel free to 
 Email: joncolsen3@gmail.com
 
 LinkedIn: https://www.linkedin.com/in/jonathan-olsen3/
-
-Personal website: https://jonny258.github.io/Jonny-Portfolio/
 
 I look forward to hearing from you!
